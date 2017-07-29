@@ -5,5 +5,10 @@ RUN apt-get -qqy update \
 	jq \
 	openssh-client \
 	curl \
+	bzip2 \
+	unzip \
+	wget \
+	git \
+	nano \
 	ruby-full && \
 	rm -rf /var/lib/apt/lists/* /var/cache/apt/*
