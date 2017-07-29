@@ -1,0 +1,9 @@
+FROM ubuntu:16.04
+
+RUN apt-get -qqy update \
+	&& apt-get -qqy --no-install-recommends install \
+	jq \
+	openssh-client \
+	curl \
+	ruby-full && \
+	rm -rf /var/lib/apt/lists/* /var/cache/apt/*
